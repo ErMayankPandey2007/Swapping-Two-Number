@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modify css by js</title>
+   
+   <script>
+    function swap()
+    {
+   var a= document.getElementById("t1").value;
+   var b= document.getElementById("t2").value;
+
+   document.getElementById("t1").value=b;
+   document.getElementById("t2").value=a;
+
+
+    }
+   </script>
+</head>
+<body>
+    <button onclick="swap()">swap</button>
+    Enter first number<input type="text" id="t1"/><br><br>
+    Enter second number<input type="text" id="t2"/>
+</body>
+</html>
